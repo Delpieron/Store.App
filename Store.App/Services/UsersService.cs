@@ -19,7 +19,7 @@ namespace Store.App.Services
         public async Task<string> LoginAsync(UserViewModel userViewModel)
         {
 
-            var response = await httpClient.PostAsJsonAsync("http://localhost:33286/api/v1/users/login", userViewModel);
+            var response = await httpClient.PostAsJsonAsync("http://localhost:1588/api/v1/users/login", userViewModel);
 
             if(response.StatusCode != System.Net.HttpStatusCode.OK)
             {
